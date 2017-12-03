@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+html {
+    background-color: black;
+}
+header {
+    background-color: darkolivegreen;
+
+}
+body {
+    background-color: white;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    border-left: 1px solid rgb(51, 132, 47);
+    border-right: 1px solid rgb(51, 132, 47);
+    box-shadow: rgb(67, 115, 60) 15px 0px 25px,
+    rgb(67, 115, 60) -15px 0px 25px;
+}
+
+div#countdown {
+    width: 30%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+}
+
+div#countdown div span {
+    font-size: 2em;
+}
+
+footer {
+    clear: left;
+    display: block;
+}
+
+footer address {
+    display: block;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.5em;
+    line-height: 20px;
+    height: 30px;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.picmy {
+    display:block;
+    margin: 10px auto;
+    border-radius: 50%;
+    width: 35%;
+    background: radial-gradient(white, rgb(204, 195, 151), rgb(204, 195, 151));
+    border: 4px double rgb(204, 195, 151);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+
+}
+
+.imgs{
+    margin: 10px auto;
+   /* padding-bottom: 10px;*/
+    width: 35%;
+    border-radius: 30px;
+    width:15%;
+
+}
+
+
+h1 {
+    color: rgb(45, 93, 62);
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#currentTime {
+    color:black;
+    float: right;
+    margin-right: 3%;
+
+}
+#headImg {
+    display: block;
+    background-position: center;
+
+}
+#info {
+    display: block;
+    float:right;
+    margin-top: 7%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+
+form#myform {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+form#myform > fieldset {
+    background-color: rgb(43, 38, 31);
+    border-radius: 20px;
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    font-size: 0.85em;
+    color:white;
+    padding: 10px;
+    margin: 10px;
+}
+legend {
+
+    font-style: oblique;
+    color: white;
+    background-color: rgb(23, 12, 19);
+}
+@media only screen and (max-width: 640px) {
+    form#myform {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+    }
+   fieldset#headingfieldset div {
+       display: -webkit-flex;
+       display: flex;
+       -webkit-flex-flow: column wrap;
+       flex-flow: column wrap;
+   }
+
+p {
+        font-size: 0.9em;
+    }
+body {
+    font-size: 80%;
+    flex-shrink: 1;
+}
+
+}
+
